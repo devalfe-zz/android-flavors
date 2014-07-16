@@ -9,8 +9,13 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'android-19'
+    compileSdkVersion 19
     buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 19
+    }
 
     buildTypes {
         release {
